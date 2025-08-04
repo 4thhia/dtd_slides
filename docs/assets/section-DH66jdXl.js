@@ -1,0 +1,1 @@
+import{b as s,o as e,w as o,g as a,t as c}from"./modules/vue-C_Pw_zrB.js";import{u as r}from"./slidev/context-BgWHCmGd.js";import{_ as i}from"./default-BA1rUQQh.js";const n={class:"title"},f={__name:"section",props:{subject:String},setup(t){return r(),(_,m)=>(e(),s(i,{class:"section"},{default:o(()=>[a("h1",n,c(t.subject),1)]),_:1}))}};export{f as _};
