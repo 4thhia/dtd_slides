@@ -271,7 +271,7 @@ headerLogo: figures/UTokyo.png
   <figure style="position: absolute; top: 48%; left: 46%; width: 80px; text-align: center;">
     <img src="./figures/supset.png" style="width: 100%;">
     <figcaption style="position: absolute; top: 110%; left: -70%; font-size: 0.8em; white-space: nowrap;">
-    Actually, this is just a special case<br>of the original problem.
+    SDE is just a special case<br>of the original problem.
     </figcaption>
   </figure>
 </div>
@@ -300,7 +300,7 @@ headerLogo: figures/UTokyo.png
 
 <v-clicks>
   <div style="font-size: 0.9em; position: absolute; bottom: 9%; left: 55%; width: 90%; line-height: 1.2;">
-    &rArr; Actually, MDPs also include continuous systems.
+    &rArr; MDPs also include continuous systems.
   </div>
   <div style="font-size: 0.9em; position: absolute; bottom: 1.5%; left: 55%; width: 45%; line-height: 1.2;">
     &rArr; But by restricting to continuous systems, a more efficient method must exist.
