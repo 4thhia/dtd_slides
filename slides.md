@@ -3,7 +3,7 @@ theme: neat
 layout: cover
 colorSchema: light
 coverLogo: figures/UTokyo.png
-coverTitle: "Reinforcement Learning for Stochastic Continuous Dynamics via Temporal Difference Method"
+coverTitle: "A Temporal Difference Method for Stochastic Continuous Dynamics"
 coverAuthor: Haruki Settai
 lineNumbers: true
 ---
@@ -11,6 +11,29 @@ lineNumbers: true
 <div style="font-size: 0.9em; position: absolute; bottom: -10%; left: 0%; width: 90%; line-height: 1.2;">
   Supervised by Takehisa Yairi, Naoya Takeishi
 </div>
+
+<v-click>
+<div style="font-size: 1.3em; position: absolute; top: -20%; left: 2%; width: 65%; line-height: 1.2; color: red;">
+    <strong>The most foundational method in Reinforcement Learning</strong>
+</div>
+<figure style="position: absolute; top: 17%; left: 3%; width: 525px; text-align: center;">
+  <img src="./figures/title_bar1.png" style="width: 100%;">
+</figure>
+</v-click>
+<v-click>
+<div style="font-size: 1.3em; position: absolute; top: 80%; left: 2%; width: 65%; line-height: 1.2; color: rgb(51, 51, 255);">
+    <strong>The system is governed by a Stochastic Differential Equation</strong>
+</div>
+<figure style="position: absolute; top: 35%; left: 0.2%; width: 800px; text-align: center;">
+  <img src="./figures/title_bar2.png" style="width: 100%;">
+</figure>
+</v-click>
+<v-click>
+<div style="font-size: 1.7em; position: absolute; top: 140%; left: 11%; width: 100%; line-height: 1.2;">
+    <strong>Reformulated Reinforcement Learning in continuous systems</strong><br>
+    <strong>which was traditionally formulated in discrete systems</strong>
+</div>
+</v-click>
 
 ---
 maxDepth: 2
@@ -277,10 +300,10 @@ headerLogo: figures/UTokyo.png
 
 <v-clicks>
   <div style="font-size: 0.9em; position: absolute; bottom: 9%; left: 55%; width: 90%; line-height: 1.2;">
-    &rArr; Standard RL is still applicable in continuous systems.
+    &rArr; Actually, MDPs also include continuous systems.
   </div>
   <div style="font-size: 0.9em; position: absolute; bottom: 1.5%; left: 55%; width: 45%; line-height: 1.2;">
-    &rArr; RL works for both systems. This implies that it fails to leverage the structure unique to continuity.
+    &rArr; But by restricting to continuous systems, a more efficient method must exist.
   </div>
 </v-clicks>
 
@@ -300,15 +323,39 @@ import AnimatedArrow from './layouts/AnimatedArrow.vue'
 
 <div v-click.hide>
   <div v-click.hide>
-  <figure style="position: absolute; top: 18%; left: 5%; width: 300px; text-align: center;">
-    <img src="./figures/RL_methods.png" style="width: 100%;">
-    <figcaption style="font-size: 0.8em; text-align: center; width: 200px; position: absolute; top: 102%; left: 15%;">
-      RL Algorithms
-    </figcaption>
-  </figure>
+    <figure style="position: absolute; top: 18%; left: 5%; width: 300px; text-align: center;">
+      <img src="./figures/RL_methods.png" style="width: 100%;">
+      <figcaption style="font-size: 0.8em; text-align: center; width: 200px; position: absolute; top: 102%; left: 15%;">
+        RL Algorithms
+      </figcaption>
+    </figure>
+    <figure style="position: absolute; top: 90%; left: 30%; width: 300px; text-align: center;">
+      <img src="./figures/uparrow.png" style="width: 2%;">
+    </figure>
+    <div style="font-size: 1.0em; position: absolute; top: 93%; left: 25%; width: 65%; line-height: 1.2;">
+      <strong>The method in title</strong>
+    </div>
+    <figure style="position: absolute; top: 24%; left: 26%; width: 300px; text-align: center;">
+      <img src="./figures/downarrow2.png" style="width: 2%;">
+    </figure>
+    <div style="font-size: 1.0em; position: absolute; top: 20%; left: 25%; width: 65%; line-height: 1.2;">
+      <strong>The most popular and successful method in RL</strong>
+    </div>
   </div>
 
   <div v-after>
+    <figure style="position: absolute; top: 90%; left: 30%; width: 300px; text-align: center;">
+      <img src="./figures/uparrow.png" style="width: 2%;">
+    </figure>
+    <div style="font-size: 1.0em; position: absolute; top: 93%; left: 25%; width: 65%; line-height: 1.2;">
+      <strong>The method in title</strong>
+    </div>
+    <figure style="position: absolute; top: 24%; left: 26%; width: 300px; text-align: center;">
+      <img src="./figures/downarrow2.png" style="width: 2%;">
+    </figure>
+    <div style="font-size: 1.0em; position: absolute; top: 20%; left: 25%; width: 65%; line-height: 1.2;">
+      <strong>The most popular and successful method in RL</strong>
+    </div>
     <figure style="position: absolute; top: 74.0%; left: 37%; width: 70px; text-align: center; z-index: 1;">
       <img src="./figures/unexploited_continuity.png" style="width: 100%;">
     </figure>
@@ -340,6 +387,18 @@ import AnimatedArrow from './layouts/AnimatedArrow.vue'
   </div>
 </div>
 <div v-after>
+  <figure style="position: absolute; top: 90%; left: 30%; width: 300px; text-align: center;">
+    <img src="./figures/uparrow.png" style="width: 2%;">
+  </figure>
+  <div style="font-size: 1.0em; position: absolute; top: 93%; left: 25%; width: 65%; line-height: 1.2;">
+    <strong>The method in title</strong>
+  </div>
+  <figure style="position: absolute; top: 24%; left: 26%; width: 300px; text-align: center;">
+    <img src="./figures/downarrow2.png" style="width: 2%;">
+  </figure>
+  <div style="font-size: 1.0em; position: absolute; top: 20%; left: 25%; width: 65%; line-height: 1.2;">
+    <strong>The most popular and successful method in RL</strong>
+  </div>
   <figure style="position: absolute; top: 74.0%; left: 37%; width: 70px; text-align: center; z-index: 1;">
     <img src="./figures/unexploited_continuity.png" style="width: 100%;">
   </figure>
@@ -415,6 +474,45 @@ subject: Preliminaries on RL
 ---
 
 # Preliminaries on RL
+
+---
+layout: two-cols
+headerEnable: true
+headerTitle: Preliminaries on RL
+headerLogo: figures/UTokyo.png
+---
+
+
+<div v-click.hide>
+  <div v-click.hide>
+    <div v-click.hide>
+      <v-click>
+        <figure style="position: absolute; top: 30%; left: 8%; width: 350px; text-align: center;">
+          <img src="./figures/rl_concept1.png" style="width: 80%;">
+        </figure>
+      </v-click>
+    </div>
+    <div v-after>
+      <figure style="position: absolute; top: 30%; left: 8%; width: 350px; text-align: center;">
+        <img src="./figures/rl_concept2.png" style="width: 80%;">
+      </figure>
+    </div>
+  </div>
+  <div v-after>
+    <figure style="position: absolute; top: 30%; left: 8%; width: 350px; text-align: center;">
+        <img src="./figures/rl_concept3.png" style="width: 80%;">
+    </figure>
+    <div style="font-size: 1.3em; position: absolute; top: 62%; left: 37%; width: 65%; line-height: 1.2; color: red;">
+      Choose the biggest one
+    </div>
+  </div>
+</div>
+<div v-after>
+  <figure style="position: absolute; top: 30%; left: 8%; width: 350px; text-align: center;">
+      <img src="./figures/rl_concept4.png" style="width: 80%;">
+  </figure>
+</div>
+
 
 ---
 layout: two-cols
@@ -1081,7 +1179,7 @@ $$
 \end{aligned}
 $$
 </div>
-<div style="font-size: 0.8em; position: absolute; top: 51%; left: 10% ;">
+<div style="font-size: 0.9em; position: absolute; top: 51%; left: 10% ;">
 Now that we have embedded the model into the argument as well, can we define the sample-based loss using it and perform RL?
 </div>
 </v-click>
@@ -1101,18 +1199,8 @@ $$
 <figure style="position: absolute; top: 74%; left: 35%">
   <img src="./figures/model_dependent.png" style="width: 62%;">
 </figure>
-<div style="font-size: 0.8em; position: absolute; top: 81%; left: 30% ;">
-Actually, we cann't compute these model-dependent terms, because we don't know the model.
-</div>
-</v-click>
-
-<v-click>
-<div style="font-size: 0.8em; position: absolute; top: 85%; left: 31% ;">
-$$
-\begin{aligned}
-V^\pi(s_t) &= \frac{1}{\gamma}\mathbb{E}_{P_\pi}\left[\text{entirely computable from trajectories}\right]
-\end{aligned}
-$$
+<div style="font-size: 1.2em; position: absolute; top: 81%; left: 30% ;">
+We cann't compute these <strong style="color: rgb(63, 22, 252);">model-dependent terms</strong>, because we don't know the model.
 </div>
 </v-click>
 
@@ -1206,102 +1294,30 @@ headerTitle: Our Approach - Analysis
 headerLogo: figures/UTokyo.png
 ---
 
-## Analysis
+## Convergence Analysis(Main result2)
 
-**Convergence Analysis**
+**Classical TD:**
+$$\begin{aligned}&V_{i+1}^\pi(s_t) = (TV_{i})(s_t):=\mathbb{E}_{P_\pi}\left[r(s_t, A_t)+\gamma V_i^\pi(S_{t+1})\right] \\ &\|TV^\pi-TU^\pi\|_\infty\leq\gamma\|V^\pi-U^\pi\|_\infty\:(0<\gamma<1)\end{aligned}$$
 
-<div v-click.hide>
-  <div v-click.hide>
-    <div v-click.hide>
-      <div v-click.hide>
-        <div v-click.hide>
-          <div v-click.hide>
-            <div v-click.hide>
-              <v-click>
-              <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-                  <img src="./figures/cont_0.png" style="width: 100%;">
-              </figure>
-              </v-click>
-            </div>
-            <div v-after>
-              <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-                <img src="./figures/cont_1.png" style="width: 100%;">
-              </figure>
-            </div>
-          </div>
-          <div v-after>
-            <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-              <img src="./figures/cont_2.png" style="width: 100%;">
-            </figure>
-          </div>
-        </div>
-        <div v-after>
-          <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-            <img src="./figures/cont_3.png" style="width: 100%;">
-          </figure>
-        </div>
-      </div>
-      <div v-after>
-        <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-          <img src="./figures/cont_4.png" style="width: 100%;">
-        </figure>
-      </div>
-    </div>
-    <div v-after>
-      <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-        <img src="./figures/cont_5.png" style="width: 100%;">
-      </figure>
-    </div>
-  </div>
-  <div v-after>
-    <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-      <img src="./figures/cont_6.png" style="width: 100%;">
-    </figure>
-  </div>
-</div>
-<div v-after>
-  <figure style="position: relative; top: 0%; left: -3%; width: 220px; text-align: center;">
-    <img src="./figures/cont_7.png" style="width: 100%;">
-  </figure>
-</div>
+**dTD:**
+$$\small\begin{aligned}&V_{i+1}^\pi(s_t) = (\tilde{T}V_{i})(s_t):=\frac{1}{\gamma}\mathbb{E}_{P_\pi}\left[\rho(s_t, A_t)+\sum_{i=1}^{n} \mu^i(s_t, A_t)\frac{\partial V_i^{\pi}(s)}{\partial s^i} \bigg|_{s_t}+ \frac{1}{2} \sum_{i=1}^{n} \sum_{j=1}^{n}[\sigma(s_t, A_t)\sigma^\top(s_t, A_t)]^{ij}\frac{\partial^2 V_i^{\pi}(s)}{\partial s^i \partial s^j}\bigg|_{s_t}\right] \\ &\|\tilde{T}V^\pi-\tilde{T}U^\pi\|_{H^{-1}(S)}\leq\frac{1}{\gamma}\left(\sum_{i=1}^2\|\nabla^i\mu\|_{L^\infty}+\sum_{i=1}^3\|\nabla^i\sigma\|_{L^\infty}\right)\|V^\pi-U^\pi\|_{H^{-1}(S)}\:(0<\gamma<\infty)\end{aligned}$$
 
 
-<div style="font-size: 0.9em; position: absolute; top: 21%; left: 30%; width: 320px;">
-<strong>Classical TD </strong>
-</div>
-<figure style="position: absolute; top: 28%; left: 35%">
-  <img src="./figures/TD_cont.png" style="width: 55%;">
+**(Efficient Computation)**
+
+$$\left\langle\Delta s_t, \frac{\partial^2 V}{\partial s^2}\bigg|_{s_t}\Delta s_t\right\rangle=\left\langle\Delta s_t, \frac{\partial}{\partial s}\left\langle\frac{\partial V}{\partial s},\Delta s_t\right\rangle\bigg|_{s_t}\right\rangle$$
+
+
+<figure style="position: relative; top: -90%; left: 77%; width: 220px; text-align: center;">
+    <img src="./figures/convergence.png" style="width: 100%;">
 </figure>
-
-<v-click>
-<figure style="position: absolute; top: 38%; left: 30%">
-  <img src="./figures/dtd_cont.png" style="width: 100%;">
-</figure>
-  <div style="font-size: 0.9em; position: absolute; top: 50%; left: 30%; width: 600px;">
-    <span style="color: rgb(220, 20, 60);">The smoother the dynamics, the faster the convergence compared to conventional methods</span>. On the other hand, since this analytical approach <span style="color: rgb(220, 20, 60);">depends on the dimension of the state space</span>, we cannot guarantee convergence when the state space has a high dimension.
-  </div>
-</v-click>
-
-
-<v-click>
-  <div style="font-size: 0.9em; position: absolute; top: 72%; left: 5%; width: 830px;">
-    Since proposed method involves the Hessian, it may seem that O(n<sup>2</sup>) (where n is the dimension of the observation
-    space) computations are required. However, by rearranging the order of calculations, the computational cost can be reduced to O(n).
-  </div>
-  <figure style="position: absolute; top: 85%; left: 30%">
-    <img src="./figures/eff.png" style="width: 50%;">
-  </figure>
-</v-click>
-
-<div style="font-size: 1.0em; position: absolute; top: 67%; left: 4.5%; width: 320px;">
-  <strong>Efficient Computation</strong>
-</div>
 
 <style>
 .slidev-vclick-hidden {
   display: none;
 }
 </style>
+
 
 
 ---
